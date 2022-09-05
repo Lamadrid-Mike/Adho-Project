@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: rgb(225, 225, 225);
+  background-color: rgb(206, 206, 206);
   font-size: 16px;
   font-family: "Architects Daughter", cursive;
   font-family: "Roboto", sans-serif;
@@ -15,12 +15,14 @@ body {
   display: flex;
   justify-content: start;
   margin: 0.5em;
+  gap: 1.5em;
+  text-align: center;
 }
 
 .nav-links a {
   text-decoration: none;
   color: black;
-  line-height: 60px;
+  line-height: 55px;
   font-size: 1.2em;
 }
 
@@ -79,10 +81,8 @@ body {
   gap: 1rem;
 }
 
-.carousel img {
-  border-radius: 0.5em;
-  border: none;
-  box-shadow: 5px 5px 10px rgb(0, 0, 0);
+.textAlign {
+  text-align: center;
 }
 
 @media screen and (max-width: 600px) {

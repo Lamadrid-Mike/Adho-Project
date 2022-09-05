@@ -23,3 +23,7 @@ mobileBtn.addEventListener("click", function () {
     document.querySelector(".links").classList.add("hidden");
   }
 });
+
+//ALIGN TEXT TO ALL <P> ELEMENTS
+const paragraphs = document.querySelectorAll(".cards div p");
+paragraphs.forEach((el) => el.classList.add("textAlign"));
