@@ -14,6 +14,7 @@ function carousel() {
   y[myIndex - 1].style.display = "block";
   setTimeout(carousel, 3000);
 }
+
 // MOBILE MENU
 const mobileBtn = document.querySelector(".nav-bar");
 mobileBtn.addEventListener("click", function () {
