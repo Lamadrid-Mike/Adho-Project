@@ -4,36 +4,56 @@
 
 body {
   background-color: rgb(206, 206, 206);
-  font-size: 16px;
-  font-family: "Architects Daughter", cursive;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  margin: 0.7em;
+  font-size: 1.2em;
+  font-weight: 100;
+  font-family: "Nerko One", cursive;
+  margin: 0.5em;
+}
+
+.pageLogo {
+  margin-top: 0.5em;
 }
 
 .nav-links {
   display: flex;
-  justify-content: start;
+  justify-content: space-around;
   margin: 0.5em;
+  margin-bottom: 1em;
   gap: 1.5em;
-  text-align: center;
+  align-items: center;
 }
 
 .nav-links a {
+  text-align: center;
   text-decoration: none;
   color: black;
   line-height: 55px;
   font-size: 1.2em;
+  transition-duration: 400ms;
+  transition-property: color, font-size;
+}
+.links a:hover {
+  color: orange;
+  font-size: 1.3em;
 }
 
-.nav-links a:hover {
-  text-decoration: underline;
+.links {
+  display: flex;
+  gap: 1.2em;
+  justify-content: center;
+}
+
+.mobileMenuClass {
+  display: flex;
+  gap: 1.2em;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .nav-bar {
   position: absolute;
-  top: 1em;
-  right: 1em;
+  top: 1.5em;
+  right: 1.5em;
   display: none;
   flex-direction: column;
   justify-content: space-between;
@@ -81,6 +101,10 @@ body {
   gap: 1rem;
 }
 
+.carousel {
+  margin: 1em;
+}
+
 .textAlign {
   text-align: center;
 }
@@ -97,5 +121,9 @@ body {
   }
   .mid .tittle {
     font-size: 0.8em;
+  }
+  .nav-links {
+    flex-direction: column;
+    justify-content: center;
   }
 }
