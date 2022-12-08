@@ -43,6 +43,17 @@ body {
   justify-content: center;
 }
 
+.nav-bar {
+  position: absolute;
+  top: 1.5em;
+  right: 1.5em;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+
 .bar1,
 .bar2,
 .bar3 {
@@ -66,17 +77,6 @@ body {
   gap: 1.2em;
   justify-content: center;
   flex-direction: column;
-}
-
-.nav-bar {
-  position: absolute;
-  top: 1.5em;
-  right: 1.5em;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 20px;
 }
 
 .nav-bar .bar {
