@@ -43,6 +43,24 @@ body {
   justify-content: center;
 }
 
+.bar1,
+.bar2,
+.bar3 {
+  transition-property: transform, opacity;
+  transition-duration: 300ms;
+}
+
+.change .bar1 {
+  transform: translate(0, 8px) rotate(-45deg);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+.change .bar3 {
+  transform: translate(0, -8px) rotate(45deg);
+}
+
 .mobileMenuClass {
   display: flex;
   gap: 1.2em;
@@ -62,7 +80,7 @@ body {
 }
 
 .nav-bar .bar {
-  height: 4px;
+  height: 0.2em;
   width: 100%;
   background-color: black;
   border-radius: 3px;
