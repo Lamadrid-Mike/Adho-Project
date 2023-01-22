@@ -15,6 +15,11 @@ function carousel() {
   setTimeout(carousel, 3000);
 }
 
+//Selections
+const scrollToWhyAdhoc = document.querySelector(".whyAdhoc");
+const whyAdhoc = document.querySelector(".whyAdhoc");
+const nav = document.querySelector(".nav-links");
+
 // MOBILE MENU
 const mobileBtn = document.querySelector(".nav-bar");
 mobileBtn.addEventListener("click", function () {
@@ -41,3 +46,28 @@ addEventListener("resize", function () {
     document.querySelector(".links").classList.add("hidden");
   }
 });
+
+//Scroll function
+document.querySelector(".links").addEventListener("click", function (e) {
+  console.log(e.target);
+  e.preventDefault();
+  if (e.target.hasAttribute("href")) {
+    const id = e.target.getAttribute("href");
+    document.querySelector(id).scrollIntoView({
+      behavior: "smooth",
+    });
+  }
+});
+
+// Creating sticky bar
+const stickyBar = function (entries) {
+  const [entry] = entries;
+  console.log(entry.isIntersecting);
+};
+
+const observer = new IntersectionObserver(stickyBar, {
+  root: null,
+  threshold: 0,
+});
+
+observer.observe(whyAdhoc);
