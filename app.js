@@ -16,7 +16,6 @@ function carousel() {
 }
 
 //Selections
-const scrollToWhyAdhoc = document.querySelector(".whyAdhoc");
 const whyAdhoc = document.querySelector(".whyAdhoc");
 const nav = document.querySelector(".nav-links");
 
@@ -49,7 +48,6 @@ addEventListener("resize", function () {
 
 //Scroll function
 document.querySelector(".links").addEventListener("click", function (e) {
-  console.log(e.target);
   e.preventDefault();
   if (e.target.hasAttribute("href")) {
     const id = e.target.getAttribute("href");
