@@ -16,7 +16,7 @@ function carousel() {
 }
 
 //Selections
-const whyAdhoc = document.querySelector(".whyAdhoc");
+const firstSection = document.querySelector(".mid");
 const nav = document.querySelector(".nav-links");
 
 // MOBILE MENU
@@ -60,7 +60,12 @@ document.querySelector(".links").addEventListener("click", function (e) {
 // Creating sticky bar
 const stickyBar = function (entries) {
   const [entry] = entries;
-  console.log(entry.isIntersecting);
+  if (entry.isIntersecting) return;
+  if (!entry.isIntersecting) {
+    document.querySelector(".nav-links").classList.add("stickyNav");
+  } else {
+    document.querySelector(".nav-links").classList.remove("stickyNav");
+  }
 };
 
 const observer = new IntersectionObserver(stickyBar, {
@@ -68,4 +73,18 @@ const observer = new IntersectionObserver(stickyBar, {
   threshold: 0,
 });
 
-observer.observe(whyAdhoc);
+observer.observe(firstSection);
+
+// Getting form data
+let formData = Array.from(document.querySelectorAll(".formData"));
+let formBtn = document.querySelector(".formBtn");
+
+let data = formData.reduce(
+  (acc, cur) => ({
+    ...acc,
+    [cur.id]: cur.value,
+  }),
+  {}
+);
+
+console.log(data);
