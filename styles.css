@@ -128,7 +128,7 @@ body {
 }
 
 .carousel {
-  margin: 2em;
+  transform: scale(0.8);
 }
 
 .textAlign {

@@ -77,14 +77,16 @@ observer.observe(firstSection);
 
 // Getting form data
 let formData = Array.from(document.querySelectorAll(".formData"));
-let formBtn = document.querySelector(".formBtn");
+let formBtn = document.querySelector(".formbtn");
 
-let data = formData.reduce(
-  (acc, cur) => ({
-    ...acc,
-    [cur.id]: cur.value,
-  }),
-  {}
-);
-
-console.log(data);
+formBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  let data = formData.reduce(
+    (acc, cur) => ({
+      ...acc,
+      [cur.id]: cur.value,
+    }),
+    {}
+  );
+  console.log(data);
+});
