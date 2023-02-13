@@ -12,7 +12,7 @@ body {
   font-size: 1.2em;
   font-weight: 100;
   font-family: "Nerko One", cursive;
-  margin: 0;
+  margin: 1em;
 }
 
 /*Swiper Cards Style*/
@@ -41,13 +41,14 @@ body {
 }
 .slider img {
   border-radius: 50%;
-  scale: 0.6;
+  scale: 0.7;
   grid-column-start: 1;
   grid-column-end: 1;
   grid-row-start: 1;
   grid-column-end: 1;
   justify-self: center;
   align-self: center;
+  border: 8px solid white;
 }
 
 .slider .personal-desc {
@@ -59,8 +60,7 @@ body {
   justify-self: center;
   align-self: start;
 }
-/*Swiper Cards style*/
-
+/*--------------------------------*/
 .pageLogo {
   margin-top: -2em;
 }
@@ -75,7 +75,7 @@ body {
   overflow: hidden;
   top: 0;
   transition: position 1s;
-  z-index: 1;
+  z-index: 2;
 }
 
 .stickyNav {
