@@ -83,6 +83,7 @@ const swiper = new Swiper(".swiper", {
   cardsEffect: {
     rotate: true,
     slideShadows: true,
+    perSlideOffset: 20,
   },
   navigation: {
     nextEl: ".swiper-button-next",
