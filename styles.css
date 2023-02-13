@@ -14,6 +14,42 @@ body {
   margin: 0;
 }
 
+/*Swiper Cards Style*/
+.personal-section {
+  margin: 2em;
+}
+
+.personal-section h1 {
+  text-align: center;
+}
+
+.swiper {
+  width: 380px;
+  height: 450px;
+}
+.parent-slider {
+  border-radius: 10px;
+}
+.slider {
+  background-color: grey;
+  opacity: 0.9;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 70% 30%;
+}
+.slider img {
+  border-radius: 50%;
+  scale: 0.6;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-column-end: 1;
+  justify-self: center;
+  align-self: center;
+}
+/*Swiper Cards style*/
+
 .pageLogo {
   margin-top: 0.5em;
 }
@@ -125,10 +161,6 @@ body {
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 1rem;
-}
-
-.carousel {
-  transform: scale(0.8);
 }
 
 .textAlign {

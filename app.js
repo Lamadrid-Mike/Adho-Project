@@ -1,26 +1,9 @@
-//CAROUSEL FUNCTION
-let myIndex = 0;
-carousel();
-function carousel() {
-  let i;
-  let y = document.getElementsByClassName("slides");
-  for (i = 0; i < y.length; i++) {
-    y[i].style.display = "none";
-  }
-  myIndex++;
-  if (myIndex > y.length) {
-    myIndex = 1;
-  }
-  y[myIndex - 1].style.display = "block";
-  setTimeout(carousel, 3000);
-}
-
 //Selections
 const firstSection = document.querySelector(".mid");
 const nav = document.querySelector(".nav-links");
+const mobileBtn = document.querySelector(".nav-bar");
 
 // MOBILE MENU
-const mobileBtn = document.querySelector(".nav-bar");
 mobileBtn.addEventListener("click", function () {
   if (document.querySelector(".links").classList.contains("hidden")) {
     document.querySelector(".links").classList.remove("hidden");
@@ -32,6 +15,7 @@ mobileBtn.addEventListener("click", function () {
     document.querySelector(".nav-bar").classList.remove("change");
   }
 });
+// -----------
 
 //ALIGN TEXT TO ALL <P> ELEMENTS
 const paragraphs = document.querySelectorAll(".cards div p");
@@ -56,6 +40,7 @@ document.querySelector(".links").addEventListener("click", function (e) {
     });
   }
 });
+//----------------------
 
 // Creating sticky bar
 const stickyBar = function (entries) {
@@ -72,8 +57,8 @@ const observer = new IntersectionObserver(stickyBar, {
   root: null,
   threshold: 0,
 });
-
 observer.observe(firstSection);
+//---------------------------
 
 // Getting form data
 let formData = Array.from(document.querySelectorAll(".formData"));
@@ -90,3 +75,21 @@ formBtn.addEventListener("click", function (e) {
   );
   console.log(data);
 });
+//-----------------
+
+//Swiper function!
+const swiper = new Swiper(".swiper", {
+  effect: "cards",
+  cardsEffect: {
+    rotate: true,
+    slideShadows: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  autoplay: {
+    delay: 3000,
+  },
+});
+//Swiper function!
