@@ -40,7 +40,6 @@ body {
   grid-template-rows: 70% 30%;
 }
 .slider img {
-  border-radius: 50%;
   scale: 0.7;
   grid-column-start: 1;
   grid-column-end: 1;
@@ -48,7 +47,10 @@ body {
   grid-column-end: 1;
   justify-self: center;
   align-self: center;
-  border: 8px solid white;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, rgb(38, 197, 206), rgb(255, 255, 255)) border-box;
+  border-radius: 50%;
+  border: 4px solid transparent;
 }
 
 .slider .personal-desc {
