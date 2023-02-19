@@ -75,7 +75,7 @@ formBtn.addEventListener("click", function (e) {
   );
   console.log(data);
 });
-//-----------------
+//--------------------
 
 //Swiper function!
 const swiper = new Swiper(".swiper", {
@@ -93,4 +93,4 @@ const swiper = new Swiper(".swiper", {
     delay: 3000,
   },
 });
-//Swiper function!
+//-------------------------

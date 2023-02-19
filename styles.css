@@ -27,6 +27,8 @@ body {
 .swiper {
   width: 380px;
   height: 450px;
+  display: flex;
+  justify-content: center;
 }
 .parent-slider {
   border-radius: 10px;
@@ -62,7 +64,7 @@ body {
   justify-self: center;
   align-self: start;
 }
-/*--------------------------------*/
+/*--------------------------------------------------------*/
 .pageLogo {
   margin-top: -2em;
 }
@@ -181,6 +183,9 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  .swiper {
+    scale: 0.7;
+  }
   .links a {
     display: block;
   }
@@ -191,7 +196,7 @@ body {
     display: none;
   }
   .mid .tittle {
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
   .nav-links {
     flex-direction: column;
@@ -212,6 +217,7 @@ body {
   padding: 1.5rem;
   margin: 1rem;
   flex-wrap: wrap;
+  gap: 10px;
 }
 
 .biggerFont {
