@@ -238,10 +238,10 @@ body {
   border: none;
   padding: 10px;
   color: white;
-  background-color: var(--btnColor);
+  background-color: rgb(45, 127, 159);
 }
 .readmore {
   text-decoration: none;
-  color: var(--btnColor);
+  color: rgb(45, 127, 159);
 }
 /*FORM STYLING*/
