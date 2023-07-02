@@ -97,7 +97,7 @@ body {
 }
 
 .links a:hover {
-  color: var(--btnColor);
+  color: rgb(45, 127, 159);
   font-size: 1.3em;
 }
 
