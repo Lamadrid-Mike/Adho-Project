@@ -12,7 +12,6 @@ body {
   font-size: 1.2em;
   font-weight: 100;
   font-family: "Nerko One", cursive;
-  margin: 1em;
 }
 
 /*Swiper Cards Style*/
@@ -65,94 +64,6 @@ body {
   align-self: start;
 }
 /*--------------------------------------------------------*/
-.pageLogo {
-  margin-top: -2em;
-}
-
-.nav-links {
-  display: flex;
-  justify-content: space-around;
-  gap: 1.5em;
-  width: 100%;
-  height: 80px;
-  background-color: rgb(206, 206, 206);
-  overflow: hidden;
-  top: 0;
-  transition: position 1s;
-  z-index: 2;
-}
-
-.stickyNav {
-  position: sticky;
-}
-
-.nav-links a {
-  text-align: center;
-  align-self: center;
-  text-decoration: none;
-  color: black;
-  font-size: 1.2em;
-  transition-duration: 400ms;
-  transition-property: color, font-size;
-}
-
-.links a:hover {
-  color: rgb(45, 127, 159);
-  font-size: 1.3em;
-}
-
-.links {
-  display: flex;
-  gap: 1.2em;
-  justify-content: center;
-}
-
-.nav-bar {
-  position: absolute;
-  top: 1.5em;
-  right: 1.5em;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 20px;
-}
-
-.bar1,
-.bar2,
-.bar3 {
-  transition-property: transform, opacity;
-  transition-duration: 300ms;
-}
-
-.change .bar1 {
-  transform: translate(0, 8px) rotate(-45deg);
-}
-
-.change .bar2 {
-  opacity: 0;
-}
-.change .bar3 {
-  transform: translate(0, -8px) rotate(45deg);
-}
-
-.mobileMenuClass {
-  display: flex;
-  gap: 1.2em;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.nav-bar .bar {
-  height: 0.2em;
-  width: 100%;
-  background-color: black;
-  border-radius: 3px;
-}
-
-.nav-bar:hover {
-  cursor: pointer;
-}
 
 .mid .tittle {
   position: absolute;
@@ -189,19 +100,11 @@ body {
   .links a {
     display: block;
   }
-  .nav-bar {
-    display: flex;
-  }
   .hidden {
     display: none;
   }
   .mid .tittle {
     font-size: 0.7em;
-  }
-  .nav-links {
-    flex-direction: column;
-    justify-content: center;
-    z-index: 0;
   }
   .tittle {
     display: none;
@@ -246,6 +149,7 @@ body {
   color: white;
   background-color: rgb(45, 127, 159);
 }
+
 .readmore {
   text-decoration: none;
   color: rgb(45, 127, 159);

@@ -1,0 +1,97 @@
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  gap: 1.5em;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(206, 206, 206);
+  overflow: hidden;
+  top: 0;
+  transition: position 1s;
+  z-index: 2;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 5px;
+}
+.nav-links a {
+  text-align: center;
+  align-self: center;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.2em;
+  transition-duration: 400ms;
+  transition-property: color, font-size;
+}
+.stickyNav {
+  position: sticky;
+}
+
+.links a:hover {
+  color: rgb(45, 127, 159);
+  font-size: 1.3em;
+}
+
+.links {
+  display: flex;
+  gap: 1.2em;
+  justify-content: center;
+}
+
+.nav-bar {
+  position: absolute;
+  top: 1.5em;
+  right: 1.5em;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 8px) rotate(-45deg);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: translate(0, -8px) rotate(45deg);
+}
+
+.mobileMenuClass {
+  display: flex;
+  gap: 1.2em;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.nav-bar .bar {
+  height: 0.2em;
+  width: 100%;
+  background-color: black;
+  border-radius: 3px;
+}
+
+.nav-bar:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-bar {
+    display: block;
+    z-index: 10;
+  }
+}
