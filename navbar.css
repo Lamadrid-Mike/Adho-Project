@@ -71,13 +71,6 @@
   transform: translate(0, -8px) rotate(45deg);
 }
 
-.mobileMenuClass {
-  display: flex;
-  gap: 1.2em;
-  justify-content: center;
-  flex-direction: column;
-}
-
 .nav-bar .bar {
   height: 0.2em;
   width: 100%;
