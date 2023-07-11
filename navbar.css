@@ -87,4 +87,49 @@
     display: block;
     z-index: 10;
   }
+  .links {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .hidden {
+    display: none;
+  }
+}
+
+.mobileMenuClass {
+  background-color: #333;
+  height: 100%;
+  position: fixed;
+  opacity: 0.9;
+  animation-name: openSwipe;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  width: 300px;
+}
+
+@keyframes openSwipe {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes closeSwipe {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.hidden {
+  animation-name: closeSwipe;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  width: 300px;
+  display: none;
 }

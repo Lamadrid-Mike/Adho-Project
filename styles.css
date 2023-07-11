@@ -100,9 +100,7 @@ body {
   .links a {
     display: block;
   }
-  .hidden {
-    display: none;
-  }
+
   .mid .tittle {
     font-size: 0.7em;
   }
