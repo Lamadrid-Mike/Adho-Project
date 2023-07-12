@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 :root {
   --btnColor: rgb(193, 64, 64);
   --textColor: rgb(56, 56, 163);

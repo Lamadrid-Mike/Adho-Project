@@ -2,13 +2,10 @@
   display: flex;
   justify-content: space-around;
   gap: 1.5em;
-  width: 100%;
   height: 80px;
   background-color: rgb(206, 206, 206);
   overflow: hidden;
-  top: 0;
   transition: position 1s;
-  z-index: 2;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -22,9 +19,6 @@
   font-size: 1.2em;
   transition-duration: 400ms;
   transition-property: color, font-size;
-}
-.stickyNav {
-  position: sticky;
 }
 
 .links a:hover {
@@ -98,38 +92,25 @@
 }
 
 .mobileMenuClass {
-  background-color: #333;
-  height: 100%;
-  position: fixed;
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: #111; /* Black*/
   opacity: 0.9;
-  animation-name: openSwipe;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-  width: 300px;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
-@keyframes openSwipe {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(0%);
-  }
+.sideEffect {
+  width: 250px;
+  margin-right: 250px;
 }
 
-@keyframes closeSwipe {
-  from {
-    transform: translateX(0%);
-  }
-  to {
-    transform: translateX(100%);
-  }
-}
-
-.hidden {
-  animation-name: closeSwipe;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-  width: 300px;
-  display: none;
+.closeEffect {
+  width: 0;
+  margin-right: 0;
 }
