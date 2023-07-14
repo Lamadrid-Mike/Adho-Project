@@ -107,12 +107,11 @@ body {
 
 /*FORM STYLING*/
 .form {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   padding: 1.5rem;
-  margin: 1rem;
+
   flex-wrap: wrap;
   gap: 10px;
 }

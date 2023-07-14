@@ -76,41 +76,42 @@
   cursor: pointer;
 }
 
+@keyframes sliderMobile {
+  from {
+    right: -100px;
+  }
+  to {
+    right: 50%;
+  }
+}
+
+.mobileMenuClass {
+  top: 4em;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
+  width: 200px;
+  opacity: 0.9;
+  border-radius: 5px;
+  animation-name: sliderMobile;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  z-index: 100;
+}
+
+.showMobileMenu {
+  transition: all 2s;
+  right: 100%;
+}
+
 @media screen and (max-width: 600px) {
   .nav-bar {
     display: block;
     z-index: 10;
   }
-  .links {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
+
   .hidden {
     display: none;
   }
-}
-
-.mobileMenuClass {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  right: 0;
-  background-color: #111; /* Black*/
-  opacity: 0.9;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-}
-
-.sideEffect {
-  width: 250px;
-  margin-right: 250px;
-}
-
-.closeEffect {
-  width: 0;
-  margin-right: 0;
 }

@@ -8,7 +8,6 @@ mobileBtn.addEventListener("click", function () {
   if (document.querySelector(".links").classList.contains("hidden")) {
     document.querySelector(".links").classList.remove("hidden");
     document.querySelector(".links").classList.add("mobileMenuClass");
-    document.querySelector(".links").classList.add("sideEffect");
     document.querySelector(".nav-bar").classList.add("change");
   } else {
     document.querySelector(".links").classList.add("hidden");
