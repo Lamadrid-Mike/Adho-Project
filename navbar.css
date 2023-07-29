@@ -1,3 +1,7 @@
+body {
+  position: relative;
+}
+
 .nav-links {
   display: flex;
   justify-content: space-around;
@@ -78,26 +82,24 @@
 
 @keyframes sliderMobile {
   from {
-    right: -100px;
+    transform: translateX(-10px);
   }
   to {
-    right: 50%;
+    transform: translateX(10px);
   }
 }
 
 .mobileMenuClass {
-  top: 4em;
-  position: fixed;
+  position: absolute;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   background-color: #333;
-  width: 200px;
-  opacity: 0.9;
-  border-radius: 5px;
   animation-name: sliderMobile;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  z-index: 100;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  z-index: 1;
 }
 
 .showMobileMenu {
