@@ -10,11 +10,6 @@ body {
   font-family: "Nerko One", cursive;
 }
 
-/*Swiper Cards Style*/
-.personal-section {
-  margin: 3em;
-}
-
 .personal-section h1 {
   text-align: center;
 }
@@ -25,9 +20,11 @@ body {
   display: flex;
   justify-content: center;
 }
+
 .parent-slider {
   border-radius: 10px;
 }
+
 .slider {
   background-color: rgb(156, 156, 156);
   opacity: 0.9;

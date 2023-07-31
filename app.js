@@ -2,12 +2,13 @@
 const firstSection = document.querySelector(".mid");
 const nav = document.querySelector(".nav-links");
 const mobileBtn = document.querySelector(".nav-bar");
-
+const linksBtn = Array.from(document.querySelectorAll(".links__btn"));
 // MOBILE MENU
 mobileBtn.addEventListener("click", function () {
   if (document.querySelector(".links").classList.contains("hidden")) {
     document.querySelector(".links").classList.remove("hidden");
     document.querySelector(".links").classList.add("mobileMenuClass");
+    document.querySelector(".links").classList.add("mobileMenuShown");
     document.querySelector(".nav-bar").classList.add("change");
   } else {
     document.querySelector(".links").classList.add("hidden");
@@ -17,18 +18,17 @@ mobileBtn.addEventListener("click", function () {
 });
 // -----------
 
+linksBtn.forEach((el) =>
+  el.addEventListener("click", function () {
+    document.querySelector(".links").classList.remove("mobileMenuClass");
+    document.querySelector(".links").classList.add("hidden");
+    document.querySelector(".nav-bar").classList.remove("change");
+  })
+);
+
 //ALIGN TEXT TO ALL <P> ELEMENTS
 const paragraphs = document.querySelectorAll(".cards div p");
 paragraphs.forEach((el) => el.classList.add("textAlign"));
-
-//RESIZE WINDOW FUNCTION
-addEventListener("resize", function () {
-  let displayWidth = window.innerWidth;
-  if (displayWidth <= 600) {
-    document.querySelector(".links").classList.remove("mobileMenuClass");
-    document.querySelector(".links").classList.add("hidden");
-  }
-});
 
 //Scroll function
 document.querySelector(".links").addEventListener("click", function (e) {
